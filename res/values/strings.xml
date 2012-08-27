@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HashCalculatorActivity!</string>
+    <string name="app_name">Hash Calculator</string>
+    <string name="enterString">Enter a String to calculate his hash</string>
+    <string name="md2HashStr">MD2 Hash:</string>
+    <string name="md5HashString">MD5 Hash:</string>
+    <string name="sha1HashString">SHA-1 Hash:</string>
+    <string name="sha256HashString">SHA-256 Hash:</string>
+    <string name="sha384HashString">SHA-384 Hash:</string>
+    <string name="sha512HashString">SHA-512 Hash:</string>
+    <string name="buttonCalculate">Calculate!</string>
+    <string name="nullStr">-</string>
+
+</resources>

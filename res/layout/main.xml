@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/enterString"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/editTextString"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:onClick="calculateHash"
+        android:text="@string/buttonCalculate" />
+
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp" >
+
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/textViewMD5Str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:layout_marginTop="36dp"
+            android:text="@string/md5HashString"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textViewMD5Hash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewMD5Str"
+            android:layout_below="@+id/textViewMD5Str"
+            android:text="@string/nullStr"
+            />
+
+        <TextView
+            android:id="@+id/textViewSHA1Str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewMD5Hash"
+            android:layout_margin="5dp"
+            android:text="@string/sha1HashString"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textViewSHA1Hash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewSHA1Str"
+            android:layout_margin="5dp"
+            android:text="@string/nullStr"/>
+
+        <TextView
+            android:id="@+id/textViewSHA256Str"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textViewSHA1Hash"
+            android:layout_margin="5dp"
+            android:text="@string/sha256HashString"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <TextView
+	        android:id="@+id/textViewSHA256Hash"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/textViewSHA256Str"
+	        android:layout_margin="5dp"
+	        android:text="@string/nullStr"/>
+        
+	    <TextView
+	        android:id="@+id/textViewSHA384Str"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/textViewSHA256Hash"
+	        android:text="@string/sha384HashString"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <TextView
+	        android:id="@+id/textViewSHA384Hash"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/textViewSHA384Str"
+	        android:layout_margin="5dp"
+	        android:text="@string/nullStr" />
+
+	    <TextView
+	        android:id="@+id/textViewSHA512Str"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="5dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/textViewSHA384Hash"
+	        android:text="@string/sha512HashString"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+	    <TextView
+	        android:id="@+id/textViewSHA512Hash"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_below="@+id/textViewSHA512Str"
+	        android:layout_margin="5dp"
+	        android:text="@string/nullStr" />
+	    
+       </RelativeLayout>
+
+    </ScrollView>    
+    
+</LinearLayout>        
+    
